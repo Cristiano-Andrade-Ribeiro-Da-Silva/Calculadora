@@ -63,6 +63,16 @@ namespace Calculadora.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap beach_7183_256 {
+            get {
+                object obj = ResourceManager.GetObject("beach-7183_256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap monkey_14540_256 {
             get {
                 object obj = ResourceManager.GetObject("monkey-14540_256", resourceCulture);
