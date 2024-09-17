@@ -19,11 +19,13 @@ namespace Calculadora
                 progressBar1.Value += 10;
                 Point currentLocation = pictureBox1.Location;
                 pictureBox1.Location = new Point(currentLocation.X += 35, currentLocation.Y);
+
             }
 
             else
             {
                 timer1.Stop();
+                pictureBox3.Visible = false;
             }
         }
 
