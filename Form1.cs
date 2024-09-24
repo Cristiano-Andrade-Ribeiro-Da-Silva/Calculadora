@@ -5,7 +5,6 @@ namespace Calculadora
         public Form1()
         {
             InitializeComponent();
-
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
             timer1.Start();
@@ -14,24 +13,23 @@ namespace Calculadora
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
             if (progressBar1.Value < progressBar1.Maximum)
             {
-                progressBar1.Value += 10;
+                progressBar1.Value += 10; 
                 Point currentLocation = pictureBox1.Location;
                 pictureBox1.Location = new Point(currentLocation.X += 35, currentLocation.Y);
 
             }
-
-            else
+            if (progressBar1.Value == 100)
             {
                 timer1.Stop();
                 pictureBox3.Visible = false;
-            }
-        }
+                this.Hide();
+                Form2 form2 = new Form2();
+                form2.Show();
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            
+            }
         }
     }
 }

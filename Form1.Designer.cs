@@ -74,9 +74,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.pngwing1;
-            pictureBox2.Location = new Point(-2, 0);
+            pictureBox2.Location = new Point(-2, -1);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(788, 462);
+            pictureBox2.Size = new Size(787, 462);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
@@ -112,7 +112,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Calculadora";
+            Text = "Carregamento";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
