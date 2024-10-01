@@ -17,5 +17,12 @@ namespace Calculadora
             InitializeComponent();
         }
 
+        private void converter_Click(object sender, EventArgs e)
+        {
+            double celsius = Convert.ToDouble(convert_celsius.Text);
+            double resultado = celsius * 1.8 + 32;
+            Fahrenheit.Text = resultado.ToString();
+
+        }
     }
 }

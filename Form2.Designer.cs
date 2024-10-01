@@ -29,27 +29,24 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button15 = new Button();
-            button14 = new Button();
-            button13 = new Button();
+            botao_delete = new Button();
+            botao_divisão = new Button();
+            botao_multiplicação = new Button();
             button12 = new Button();
             button11 = new Button();
-            button10 = new Button();
-            button9 = new Button();
-            button8 = new Button();
-            button7 = new Button();
-            button6 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            button0 = new Button();
-            button16 = new Button();
-            button17 = new Button();
-            button18 = new Button();
-            button19 = new Button();
-            button20 = new Button();
+            botao_igual = new Button();
+            botao_09 = new Button();
+            botao_08 = new Button();
+            botao_07 = new Button();
+            botao_06 = new Button();
+            botao_05 = new Button();
+            botao_04 = new Button();
+            botao_03 = new Button();
+            botao_02 = new Button();
+            botao_01 = new Button();
+            botao_00 = new Button();
+            botao_soma = new Button();
+            botao_subtração = new Button();
             menuStrip1 = new MenuStrip();
             conversãoToolStripMenuItem = new ToolStripMenuItem();
             celsius_para_fahrenheit = new ToolStripMenuItem();
@@ -69,35 +66,35 @@
             label1.Text = "0";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button15
+            // botao_delete
             // 
-            button15.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button15.Location = new Point(360, 91);
-            button15.Name = "button15";
-            button15.Size = new Size(93, 37);
-            button15.TabIndex = 32;
-            button15.Text = "<_x_]";
-            button15.UseVisualStyleBackColor = true;
+            botao_delete.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_delete.Location = new Point(360, 91);
+            botao_delete.Name = "botao_delete";
+            botao_delete.Size = new Size(93, 37);
+            botao_delete.TabIndex = 32;
+            botao_delete.Text = "<_x_]";
+            botao_delete.UseVisualStyleBackColor = true;
             // 
-            // button14
+            // botao_divisão
             // 
-            button14.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button14.Location = new Point(360, 134);
-            button14.Name = "button14";
-            button14.Size = new Size(93, 37);
-            button14.TabIndex = 31;
-            button14.Text = "--:--";
-            button14.UseVisualStyleBackColor = true;
+            botao_divisão.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_divisão.Location = new Point(360, 134);
+            botao_divisão.Name = "botao_divisão";
+            botao_divisão.Size = new Size(93, 37);
+            botao_divisão.TabIndex = 31;
+            botao_divisão.Text = "--:--";
+            botao_divisão.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // botao_multiplicação
             // 
-            button13.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button13.Location = new Point(360, 177);
-            button13.Name = "button13";
-            button13.Size = new Size(93, 37);
-            button13.TabIndex = 30;
-            button13.Text = "x";
-            button13.UseVisualStyleBackColor = true;
+            botao_multiplicação.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_multiplicação.Location = new Point(360, 177);
+            botao_multiplicação.Name = "botao_multiplicação";
+            botao_multiplicação.Size = new Size(93, 37);
+            botao_multiplicação.TabIndex = 30;
+            botao_multiplicação.Text = "x";
+            botao_multiplicação.UseVisualStyleBackColor = true;
             // 
             // button12
             // 
@@ -119,165 +116,135 @@
             button11.Text = "+";
             button11.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // botao_igual
             // 
-            button10.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button10.Location = new Point(360, 306);
-            button10.Name = "button10";
-            button10.Size = new Size(93, 37);
-            button10.TabIndex = 27;
-            button10.Text = "=";
-            button10.UseVisualStyleBackColor = true;
+            botao_igual.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_igual.Location = new Point(360, 306);
+            botao_igual.Name = "botao_igual";
+            botao_igual.Size = new Size(93, 37);
+            botao_igual.TabIndex = 27;
+            botao_igual.Text = "=";
+            botao_igual.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // botao_09
             // 
-            button9.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button9.Location = new Point(242, 177);
-            button9.Name = "button9";
-            button9.Size = new Size(93, 37);
-            button9.TabIndex = 26;
-            button9.Text = "9";
-            button9.UseVisualStyleBackColor = true;
+            botao_09.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_09.Location = new Point(242, 177);
+            botao_09.Name = "botao_09";
+            botao_09.Size = new Size(93, 37);
+            botao_09.TabIndex = 26;
+            botao_09.Text = "9";
+            botao_09.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // botao_08
             // 
-            button8.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button8.Location = new Point(127, 177);
-            button8.Name = "button8";
-            button8.Size = new Size(93, 37);
-            button8.TabIndex = 25;
-            button8.Text = "8";
-            button8.UseVisualStyleBackColor = true;
+            botao_08.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_08.Location = new Point(127, 177);
+            botao_08.Name = "botao_08";
+            botao_08.Size = new Size(93, 37);
+            botao_08.TabIndex = 25;
+            botao_08.Text = "8";
+            botao_08.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // botao_07
             // 
-            button7.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button7.Location = new Point(10, 177);
-            button7.Name = "button7";
-            button7.Size = new Size(93, 37);
-            button7.TabIndex = 24;
-            button7.Text = "7";
-            button7.UseVisualStyleBackColor = true;
+            botao_07.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_07.Location = new Point(10, 177);
+            botao_07.Name = "botao_07";
+            botao_07.Size = new Size(93, 37);
+            botao_07.TabIndex = 24;
+            botao_07.Text = "7";
+            botao_07.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // botao_06
             // 
-            button6.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button6.Location = new Point(242, 220);
-            button6.Name = "button6";
-            button6.Size = new Size(93, 37);
-            button6.TabIndex = 23;
-            button6.Text = "6";
-            button6.UseVisualStyleBackColor = true;
+            botao_06.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_06.Location = new Point(242, 220);
+            botao_06.Name = "botao_06";
+            botao_06.Size = new Size(93, 37);
+            botao_06.TabIndex = 23;
+            botao_06.Text = "6";
+            botao_06.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // botao_05
             // 
-            button5.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button5.Location = new Point(127, 220);
-            button5.Name = "button5";
-            button5.Size = new Size(93, 37);
-            button5.TabIndex = 22;
-            button5.Text = "5";
-            button5.UseVisualStyleBackColor = true;
+            botao_05.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_05.Location = new Point(127, 220);
+            botao_05.Name = "botao_05";
+            botao_05.Size = new Size(93, 37);
+            botao_05.TabIndex = 22;
+            botao_05.Text = "5";
+            botao_05.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // botao_04
             // 
-            button4.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button4.Location = new Point(10, 220);
-            button4.Name = "button4";
-            button4.Size = new Size(93, 37);
-            button4.TabIndex = 21;
-            button4.Text = "4";
-            button4.UseVisualStyleBackColor = true;
+            botao_04.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_04.Location = new Point(10, 220);
+            botao_04.Name = "botao_04";
+            botao_04.Size = new Size(93, 37);
+            botao_04.TabIndex = 21;
+            botao_04.Text = "4";
+            botao_04.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // botao_03
             // 
-            button3.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button3.Location = new Point(242, 263);
-            button3.Name = "button3";
-            button3.Size = new Size(93, 37);
-            button3.TabIndex = 20;
-            button3.Text = "3";
-            button3.UseVisualStyleBackColor = true;
+            botao_03.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_03.Location = new Point(242, 263);
+            botao_03.Name = "botao_03";
+            botao_03.Size = new Size(93, 37);
+            botao_03.TabIndex = 20;
+            botao_03.Text = "3";
+            botao_03.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // botao_02
             // 
-            button2.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button2.Location = new Point(127, 263);
-            button2.Name = "button2";
-            button2.Size = new Size(93, 37);
-            button2.TabIndex = 19;
-            button2.Text = "2";
-            button2.UseVisualStyleBackColor = true;
+            botao_02.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_02.Location = new Point(127, 263);
+            botao_02.Name = "botao_02";
+            botao_02.Size = new Size(93, 37);
+            botao_02.TabIndex = 19;
+            botao_02.Text = "2";
+            botao_02.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // botao_01
             // 
-            button1.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button1.Location = new Point(10, 263);
-            button1.Name = "button1";
-            button1.Size = new Size(93, 37);
-            button1.TabIndex = 18;
-            button1.Text = "1";
-            button1.UseVisualStyleBackColor = true;
+            botao_01.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_01.Location = new Point(10, 263);
+            botao_01.Name = "botao_01";
+            botao_01.Size = new Size(93, 37);
+            botao_01.TabIndex = 18;
+            botao_01.Text = "1";
+            botao_01.UseVisualStyleBackColor = true;
             // 
-            // button0
+            // botao_00
             // 
-            button0.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button0.Location = new Point(127, 306);
-            button0.Name = "button0";
-            button0.Size = new Size(93, 37);
-            button0.TabIndex = 17;
-            button0.Text = "0";
-            button0.UseVisualStyleBackColor = true;
+            botao_00.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_00.Location = new Point(127, 306);
+            botao_00.Name = "botao_00";
+            botao_00.Size = new Size(93, 37);
+            botao_00.TabIndex = 17;
+            botao_00.Text = "0";
+            botao_00.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // botao_soma
             // 
-            button16.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button16.Location = new Point(10, 220);
-            button16.Name = "button16";
-            button16.Size = new Size(93, 37);
-            button16.TabIndex = 21;
-            button16.Text = "4";
-            button16.UseVisualStyleBackColor = true;
+            botao_soma.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_soma.Location = new Point(360, 263);
+            botao_soma.Name = "botao_soma";
+            botao_soma.Size = new Size(93, 37);
+            botao_soma.TabIndex = 28;
+            botao_soma.Text = "+";
+            botao_soma.UseVisualStyleBackColor = true;
             // 
-            // button17
+            // botao_subtração
             // 
-            button17.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button17.Location = new Point(127, 220);
-            button17.Name = "button17";
-            button17.Size = new Size(93, 37);
-            button17.TabIndex = 22;
-            button17.Text = "5";
-            button17.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            button18.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button18.Location = new Point(242, 220);
-            button18.Name = "button18";
-            button18.Size = new Size(93, 37);
-            button18.TabIndex = 23;
-            button18.Text = "6";
-            button18.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            button19.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button19.Location = new Point(360, 263);
-            button19.Name = "button19";
-            button19.Size = new Size(93, 37);
-            button19.TabIndex = 28;
-            button19.Text = "+";
-            button19.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            button20.Font = new Font("Arial", 12F, FontStyle.Italic);
-            button20.Location = new Point(360, 220);
-            button20.Name = "button20";
-            button20.Size = new Size(93, 37);
-            button20.TabIndex = 29;
-            button20.Text = "--";
-            button20.UseVisualStyleBackColor = true;
+            botao_subtração.Font = new Font("Arial", 12F, FontStyle.Italic);
+            botao_subtração.Location = new Point(360, 220);
+            botao_subtração.Name = "botao_subtração";
+            botao_subtração.Size = new Size(93, 37);
+            botao_subtração.TabIndex = 29;
+            botao_subtração.Text = "--";
+            botao_subtração.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -298,15 +265,15 @@
             // celsius_para_fahrenheit
             // 
             celsius_para_fahrenheit.Name = "celsius_para_fahrenheit";
-            celsius_para_fahrenheit.Size = new Size(194, 22);
-            celsius_para_fahrenheit.Text = "Celcus para Fahrenheit";
+            celsius_para_fahrenheit.Size = new Size(225, 22);
+            celsius_para_fahrenheit.Text = "Celsius para Fahrenheit";
             celsius_para_fahrenheit.Click += celsius_para_fahrenheit_Click;
             // 
             // cmParaPolegadaToolStripMenuItem
             // 
             cmParaPolegadaToolStripMenuItem.Name = "cmParaPolegadaToolStripMenuItem";
-            cmParaPolegadaToolStripMenuItem.Size = new Size(194, 22);
-            cmParaPolegadaToolStripMenuItem.Text = "Cm para Polegada ";
+            cmParaPolegadaToolStripMenuItem.Size = new Size(225, 22);
+            cmParaPolegadaToolStripMenuItem.Text = "Centímetros para Polegadas ";
             // 
             // calculadora_sair
             // 
@@ -321,27 +288,24 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(469, 346);
             Controls.Add(label1);
-            Controls.Add(button15);
-            Controls.Add(button14);
-            Controls.Add(button13);
-            Controls.Add(button20);
+            Controls.Add(botao_delete);
+            Controls.Add(botao_divisão);
+            Controls.Add(botao_multiplicação);
+            Controls.Add(botao_subtração);
             Controls.Add(button12);
-            Controls.Add(button19);
+            Controls.Add(botao_soma);
             Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button18);
-            Controls.Add(button6);
-            Controls.Add(button17);
-            Controls.Add(button16);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(button0);
+            Controls.Add(botao_igual);
+            Controls.Add(botao_09);
+            Controls.Add(botao_08);
+            Controls.Add(botao_07);
+            Controls.Add(botao_06);
+            Controls.Add(botao_05);
+            Controls.Add(botao_04);
+            Controls.Add(botao_03);
+            Controls.Add(botao_02);
+            Controls.Add(botao_01);
+            Controls.Add(botao_00);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Calculadora";
@@ -356,27 +320,24 @@
         #endregion
 
         private Label label1;
-        private Button button15;
-        private Button button14;
-        private Button button13;
+        private Button botao_delete;
+        private Button botao_divisão;
+        private Button botao_multiplicação;
         private Button button12;
         private Button button11;
-        private Button button10;
-        private Button button9;
-        private Button button8;
-        private Button button7;
-        private Button button6;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Button button0;
-        private Button button16;
-        private Button button17;
-        private Button button18;
-        private Button button19;
-        private Button button20;
+        private Button botao_igual;
+        private Button botao_09;
+        private Button botao_08;
+        private Button botao_07;
+        private Button botao_06;
+        private Button botao_05;
+        private Button botao_03;
+        private Button botao_02;
+        private Button botao_01;
+        private Button botao_00;
+        private Button botao_04;
+        private Button botao_soma;
+        private Button botao_subtração;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem conversãoToolStripMenuItem;
         private ToolStripMenuItem celsius_para_fahrenheit;

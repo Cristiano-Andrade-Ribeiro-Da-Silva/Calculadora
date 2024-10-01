@@ -30,9 +30,9 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            convert_celsius = new TextBox();
+            Fahrenheit = new TextBox();
+            converter = new Button();
             button2 = new Button();
             SuspendLayout();
             // 
@@ -54,28 +54,29 @@
             label2.TabIndex = 1;
             label2.Text = "Temperatura em Fahrenheit";
             // 
-            // textBox1
+            // convert_celsius
             // 
-            textBox1.Location = new Point(23, 58);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(134, 23);
-            textBox1.TabIndex = 2;
+            convert_celsius.Location = new Point(23, 58);
+            convert_celsius.Name = "convert_celsius";
+            convert_celsius.Size = new Size(134, 23);
+            convert_celsius.TabIndex = 2;
             // 
-            // textBox2
+            // Fahrenheit
             // 
-            textBox2.Location = new Point(23, 157);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(152, 23);
-            textBox2.TabIndex = 3;
+            Fahrenheit.Location = new Point(23, 157);
+            Fahrenheit.Name = "Fahrenheit";
+            Fahrenheit.Size = new Size(152, 23);
+            Fahrenheit.TabIndex = 3;
             // 
-            // button1
+            // converter
             // 
-            button1.Location = new Point(226, 58);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "Converter";
-            button1.UseVisualStyleBackColor = true;
+            converter.Location = new Point(226, 58);
+            converter.Name = "converter";
+            converter.Size = new Size(75, 23);
+            converter.TabIndex = 4;
+            converter.Text = "Converter";
+            converter.UseVisualStyleBackColor = true;
+            converter.Click += converter_Click;
             // 
             // button2
             // 
@@ -92,9 +93,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(337, 207);
             Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(converter);
+            Controls.Add(Fahrenheit);
+            Controls.Add(convert_celsius);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form3";
@@ -107,9 +108,9 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox convert_celsius;
+        private TextBox Fahrenheit;
+        private Button converter;
         private Button button2;
     }
 }
