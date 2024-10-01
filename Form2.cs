@@ -10,11 +10,28 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class Form2 : Form
+    public partial class Calculadora : Form
     {
-        public Form2()
+        public Calculadora()
         {
             InitializeComponent();
+        }
+
+        private void calculadora_sair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Calculadora_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void celsius_para_fahrenheit_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.ShowDialog();
+
         }
     }
 }

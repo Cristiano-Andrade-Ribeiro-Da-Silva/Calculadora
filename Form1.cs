@@ -26,7 +26,7 @@ namespace Calculadora
                 timer1.Stop();
                 pictureBox3.Visible = false;
                 this.Hide();
-                Form2 form2 = new Form2();
+                Calculadora form2 = new Calculadora();
                 form2.Show();
 
             }
