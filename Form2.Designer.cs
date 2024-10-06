@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            resultado = new Label();
             botao_delete = new Button();
             botao_divisão = new Button();
             botao_multiplicação = new Button();
@@ -55,16 +55,15 @@
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // resultado
             // 
-            label1.BorderStyle = BorderStyle.FixedSingle;
-            label1.Font = new Font("Arial", 12F, FontStyle.Italic);
-            label1.Location = new Point(10, 78);
-            label1.Name = "label1";
-            label1.Size = new Size(325, 93);
-            label1.TabIndex = 33;
-            label1.Text = "0";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            resultado.BorderStyle = BorderStyle.FixedSingle;
+            resultado.Font = new Font("Arial", 12F, FontStyle.Italic);
+            resultado.Location = new Point(10, 78);
+            resultado.Name = "resultado";
+            resultado.Size = new Size(325, 93);
+            resultado.TabIndex = 33;
+            resultado.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // botao_delete
             // 
@@ -75,6 +74,7 @@
             botao_delete.TabIndex = 32;
             botao_delete.Text = "<_x_]";
             botao_delete.UseVisualStyleBackColor = true;
+            botao_delete.Click += botao_delete_Click;
             // 
             // botao_divisão
             // 
@@ -85,6 +85,7 @@
             botao_divisão.TabIndex = 31;
             botao_divisão.Text = "--:--";
             botao_divisão.UseVisualStyleBackColor = true;
+            botao_divisão.Click += botao_divisão_Click;
             // 
             // botao_multiplicação
             // 
@@ -95,6 +96,7 @@
             botao_multiplicação.TabIndex = 30;
             botao_multiplicação.Text = "x";
             botao_multiplicação.UseVisualStyleBackColor = true;
+            botao_multiplicação.Click += botao_multiplicação_Click;
             // 
             // button12
             // 
@@ -125,6 +127,7 @@
             botao_igual.TabIndex = 27;
             botao_igual.Text = "=";
             botao_igual.UseVisualStyleBackColor = true;
+            botao_igual.Click += botao_igual_Click;
             // 
             // botao_09
             // 
@@ -135,6 +138,7 @@
             botao_09.TabIndex = 26;
             botao_09.Text = "9";
             botao_09.UseVisualStyleBackColor = true;
+            botao_09.Click += botao_09_Click;
             // 
             // botao_08
             // 
@@ -145,6 +149,7 @@
             botao_08.TabIndex = 25;
             botao_08.Text = "8";
             botao_08.UseVisualStyleBackColor = true;
+            botao_08.Click += botao_08_Click;
             // 
             // botao_07
             // 
@@ -155,6 +160,7 @@
             botao_07.TabIndex = 24;
             botao_07.Text = "7";
             botao_07.UseVisualStyleBackColor = true;
+            botao_07.Click += botao_07_Click;
             // 
             // botao_06
             // 
@@ -165,6 +171,7 @@
             botao_06.TabIndex = 23;
             botao_06.Text = "6";
             botao_06.UseVisualStyleBackColor = true;
+            botao_06.Click += botao_06_Click;
             // 
             // botao_05
             // 
@@ -175,6 +182,7 @@
             botao_05.TabIndex = 22;
             botao_05.Text = "5";
             botao_05.UseVisualStyleBackColor = true;
+            botao_05.Click += botao_05_Click;
             // 
             // botao_04
             // 
@@ -185,6 +193,7 @@
             botao_04.TabIndex = 21;
             botao_04.Text = "4";
             botao_04.UseVisualStyleBackColor = true;
+            botao_04.Click += botao_04_Click;
             // 
             // botao_03
             // 
@@ -195,6 +204,7 @@
             botao_03.TabIndex = 20;
             botao_03.Text = "3";
             botao_03.UseVisualStyleBackColor = true;
+            botao_03.Click += botao_03_Click;
             // 
             // botao_02
             // 
@@ -205,6 +215,7 @@
             botao_02.TabIndex = 19;
             botao_02.Text = "2";
             botao_02.UseVisualStyleBackColor = true;
+            botao_02.Click += botao_02_Click;
             // 
             // botao_01
             // 
@@ -215,6 +226,7 @@
             botao_01.TabIndex = 18;
             botao_01.Text = "1";
             botao_01.UseVisualStyleBackColor = true;
+            botao_01.Click += botao_01_Click;
             // 
             // botao_00
             // 
@@ -225,6 +237,7 @@
             botao_00.TabIndex = 17;
             botao_00.Text = "0";
             botao_00.UseVisualStyleBackColor = true;
+            botao_00.Click += botao_00_Click;
             // 
             // botao_soma
             // 
@@ -235,6 +248,7 @@
             botao_soma.TabIndex = 28;
             botao_soma.Text = "+";
             botao_soma.UseVisualStyleBackColor = true;
+            botao_soma.Click += botao_soma_Click;
             // 
             // botao_subtração
             // 
@@ -245,6 +259,7 @@
             botao_subtração.TabIndex = 29;
             botao_subtração.Text = "--";
             botao_subtração.UseVisualStyleBackColor = true;
+            botao_subtração.Click += botao_subtração_Click;
             // 
             // menuStrip1
             // 
@@ -287,7 +302,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(469, 346);
-            Controls.Add(label1);
+            Controls.Add(resultado);
             Controls.Add(botao_delete);
             Controls.Add(botao_divisão);
             Controls.Add(botao_multiplicação);
@@ -309,6 +324,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Calculadora";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora";
             FormClosed += Calculadora_FormClosed;
             menuStrip1.ResumeLayout(false);
@@ -319,7 +335,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label resultado;
         private Button botao_delete;
         private Button botao_divisão;
         private Button botao_multiplicação;

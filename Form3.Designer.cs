@@ -99,6 +99,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form3";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form3";
             ResumeLayout(false);
             PerformLayout();
