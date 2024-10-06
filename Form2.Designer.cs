@@ -289,6 +289,7 @@
             cmParaPolegadaToolStripMenuItem.Name = "cmParaPolegadaToolStripMenuItem";
             cmParaPolegadaToolStripMenuItem.Size = new Size(225, 22);
             cmParaPolegadaToolStripMenuItem.Text = "Centímetros para Polegadas ";
+            cmParaPolegadaToolStripMenuItem.Click += cmParaPolegadaToolStripMenuItem_Click;
             // 
             // calculadora_sair
             // 
@@ -323,6 +324,7 @@
             Controls.Add(botao_00);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            MaximizeBox = false;
             Name = "Calculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora";

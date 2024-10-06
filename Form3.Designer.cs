@@ -98,6 +98,7 @@
             Controls.Add(convert_celsius);
             Controls.Add(label2);
             Controls.Add(label1);
+            MaximizeBox = false;
             Name = "Form3";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form3";
