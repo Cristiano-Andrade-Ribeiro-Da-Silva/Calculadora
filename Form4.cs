@@ -23,5 +23,11 @@ namespace Calculadora
             double resultado_em_polegadas = cemtimetros / 2.54;
             polegadas.Text = resultado_em_polegadas.ToString();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            centimetros.Clear();
+            polegadas.Clear();
+        }
     }
 }

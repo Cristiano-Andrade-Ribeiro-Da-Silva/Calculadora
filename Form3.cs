@@ -24,5 +24,11 @@ namespace Calculadora
             Fahrenheit.Text = resultado.ToString();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            convert_celsius.Clear();
+            Fahrenheit.Clear();
+        }
     }
 }
